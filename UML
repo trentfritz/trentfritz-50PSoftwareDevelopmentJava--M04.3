@@ -1,0 +1,57 @@
+ _________________________________________________
+|                      MyList                      |
+|-------------------------------------------------|
+| + add(E e): void                                 |
+| + add(int index, E e): void                      |
+| + addFirst(E e): void                            |
+| + addLast(E e): void                             |
+| + get(int index): E                              |
+| + remove(int index): E                           |
+| + removeFirst(): E                               |
+| + removeLast(): E                                |
+| + size(): int                                    |
+| + contains(E e): boolean                         |
+| + indexOf(E e): int                              |
+| + lastIndexOf(E e): int                          |
+| + set(int index, E e): E                         |
+| + clear(): void                                  |
+| + isEmpty(): boolean                             |
+| + iterator(): Iterator<E>                        |
+| + listIterator(): ListIterator<E>                |
+| + listIterator(int index): ListIterator<E>       |
+|_________________________________________________|
+                          |
+                          |
+            ______________|________________
+           |                               |
+           |                               |
+           ▼                               ▼
+  ___________________              ___________________
+ |  TwoWayLinkedList  |            |       Node        |
+ |------------------- |            |-------------------|
+ | - head: Node<E>    |            | - element: E      |
+ | - tail: Node<E>    |            | - next: Node<E>   |
+ | - size: int        |            | - previous: Node<E>|
+ |------------------- |            |-------------------|
+ | + TwoWayLinkedList()|            | + Node(E element) |
+ | + TwoWayLinkedList()|            |___________________|
+ | + add(E e): void    |
+ | + add(int index, E e)|
+ | + addFirst(E e): void|
+ | + addLast(E e): void |
+ | + get(int index): E  |
+ | + remove(int index): E|
+ | + removeFirst(): E   |
+ | + removeLast(): E    |
+ | + size(): int        |
+ | + contains(E e): boolean|
+ | + indexOf(E e): int  |
+ | + lastIndexOf(E e): int|
+ | + set(int index, E e): E|
+ | + clear(): void      |
+ | + isEmpty(): boolean |
+ | + iterator(): Iterator<E>|
+ | + listIterator(): ListIterator<E>|
+ | + listIterator(int index): ListIterator<E>|
+ |_____________________|
+
